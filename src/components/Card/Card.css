@@ -1,0 +1,40 @@
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px; 
+  color: #555; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  white-space: nowrap;
+}
+
+.category {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    background-color: #ffa07a;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+  }
