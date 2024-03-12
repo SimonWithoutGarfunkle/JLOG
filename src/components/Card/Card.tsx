@@ -8,18 +8,20 @@ interface CardProps {
     publishedAt: string;
     thumbnail: string;
     category: string;
+    onSelect: () => void;
     }
 
 
 const Card: React.FC<CardProps> = (props) => {
-    const publishedDate = new Date(props.publishedAt).toLocaleDateString();
+    const dateParts: string[] = props.publishedAt.split(/\/|\s|:/);
+    const publishedDate: string = new Date(`${dateParts[2]}-${dateParts[1]}-${dateParts[0]}T${dateParts[3]}:${dateParts[4]}:${dateParts[5]}`).toLocaleDateString();
 
     return (
-        <div className="card">
+        <div className="card" onClick={props.onSelect}>
             <img src={props.image} alt={props.title} />
             <h2>{props.title}</h2>
             <p>{props.content}</p>
-            <p><span className="category">{props.category}</span>  Le {publishedDate} par utilisateur{props.userId}</p>
+            <p><div className="publishInfo"><span className="category">{props.category}</span>  Le {publishedDate} par utilisateur{props.userId}</div></p>
         </div>
     );
 }

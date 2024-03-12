@@ -1,0 +1,46 @@
+.header header {
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+.header header p {
+  color: #8964b0;
+  font-size: 1.3em;
+  margin-top: 2px;
+}
+
+.header menu {
+  text-align: center;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.header button {
+  background-color: #7925d3;
+  color: #ebe7ef;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  min-width: 150px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.header button:hover {
+  background-color: #1b082f;
+  color: #ebe7ef;
+}
