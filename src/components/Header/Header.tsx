@@ -1,7 +1,13 @@
 import React from 'react';
 import './Header.css';
 
-const Header: React.FC = () => {
+interface HeaderProps {
+    onUserClick: () => void;
+    onRandomArticle: () => void;
+    onAboutClick: () => void;
+}
+
+const Header: React.FC<HeaderProps> = (props) => {
     return (
         <div className="header">
             <header>
@@ -9,9 +15,9 @@ const Header: React.FC = () => {
                 <p>Un JLOG, c'est comme un Blog mais pour Jacky !</p>
             </header>
             <menu>
-                <button >Accueil</button>
-                <button>Article surprise</button>
-                <button>À propos</button>
+                <button onClick={props.onUserClick}>Accueil</button>
+                <button onClick={props.onRandomArticle}>Article surprise</button>
+                <button onClick={props.onAboutClick}>À propos</button>
             </menu>
         </div>
     );

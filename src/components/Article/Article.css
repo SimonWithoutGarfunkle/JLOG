@@ -1,10 +1,13 @@
 .article article {
-  margin: 20px 5px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 20px;
   padding: 20px;
   border: 2px solid #8a2be2;
   border-radius: 5px;
   background-color: #0d1b2a;
   box-shadow: 0 0 10px #8a2be2;
+  text-align: center;
 }
 
 .article .category {
@@ -32,10 +35,17 @@
 
 .article p {
   color: #ebe7ef;
+  font-size: 1.2em;
+}
+
+.article img {
+  width: 60%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 .article img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }

@@ -1,0 +1,30 @@
+.aPropos {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #8a2be2;
+    border-radius: 5px;
+    background-color: #0d1b2a;
+    box-shadow: 0 0 10px #8a2be2;
+    text-align: center;
+}
+
+.aPropos h1 {
+    font-size: 40px;
+    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aPropos p {
+    color: #ebe7ef;
+    font-size: 1.2em;
+  }
+
+.aPropos img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px; 
+  }
+
