@@ -20,8 +20,8 @@ const Card: React.FC<CardProps> = (props) => {
         <div className="card" onClick={props.onSelect}>
             <img src={props.image} alt={props.title} />
             <h2>{props.title}</h2>
-            <p>{props.content}</p>
-            <p><div className="publishInfo"><span className="category">{props.category}</span>  Le {publishedDate} par utilisateur{props.userId}</div></p>
+            <div className="content"><p>{props.content}</p></div>
+            <div className="publishInfo"><span className="category">{props.category}</span>  Le {publishedDate} par utilisateur{props.userId}</div>
         </div>
     );
 }

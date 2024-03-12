@@ -15,7 +15,7 @@ interface ArticleProps {
     return (
       <div className="article">
       <article>
-        <p><span className="category">{props.category}</span>  Publié le {props.publishedAt} par utilisateur{props.userId} - Mis à jour : {props.updatedAt}</p>
+        <div className="publishInfo"><span className="category">{props.category}</span>  Publié le {props.publishedAt} par utilisateur{props.userId} - Mis à jour : {props.updatedAt}</div>
         <h1>{props.title}</h1>
         <img src={props.image} alt={props.title} />
         <p>{props.content}</p>

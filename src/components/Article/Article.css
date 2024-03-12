@@ -1,5 +1,5 @@
 .article article {
-  margin: 20px 0;
+  margin: 20px 5px;
   padding: 20px;
   border: 2px solid #8a2be2;
   border-radius: 5px;
@@ -19,11 +19,19 @@
 }
 
 .article h1{
-  color: #8a2be2;
+  font-size: 40px;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.article .publishInfo {
+  color: #a18aba;
+  font-size: 14px;
 }
 
 .article p {
-  color: #6693bd;
+  color: #ebe7ef;
 }
 
 .article img {
